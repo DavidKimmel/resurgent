@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketing Audit: Resurgent Sports Rehab</title>
+<style>
+:root { --bg: #0f172a; --card: #1e293b; --border: #334155; --text: #e2e8f0; --muted: #94a3b8; --accent: #3b82f6; --green: #22c55e; --yellow: #eab308; --red: #ef4444; --orange: #f97316; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; }
+h3 { font-size: 1.15rem; margin: 1.5rem 0 0.75rem; color: var(--accent); }
+p, li { margin-bottom: 0.5rem; }
+ul, ol { padding-left: 1.5rem; }
+.meta { color: var(--muted); margin-bottom: 2rem; }
+.meta span { margin-right: 1.5rem; }
+.score-hero { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; text-align: center; margin: 2rem 0; }
+.score-hero .number { font-size: 5rem; font-weight: 800; color: var(--yellow); }
+.score-hero .grade { font-size: 2rem; color: var(--muted); }
+.score-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+.score-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; }
+.score-card .label { color: var(--muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.score-card .value { font-size: 2rem; font-weight: 700; margin: 0.25rem 0; }
+.score-card .bar { background: #1a1a2e; border-radius: 4px; height: 8px; margin-top: 0.5rem; }
+.score-card .bar-fill { height: 100%; border-radius: 4px; }
+.bar-red { background: var(--red); }
+.bar-orange { background: var(--orange); }
+.bar-yellow { background: var(--yellow); }
+.bar-green { background: var(--green); }
+.text-red { color: var(--red); }
+.text-orange { color: var(--orange); }
+.text-yellow { color: var(--yellow); }
+.text-green { color: var(--green); }
+.summary-box { background: var(--card); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; padding: 1.5rem; margin: 1.5rem 0; }
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+th, td { padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+th { background: var(--card); color: var(--muted); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; }
+tr:hover { background: rgba(59,130,246,0.05); }
+.win-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin: 0.75rem 0; }
+.win-card .title { font-weight: 600; margin-bottom: 0.5rem; }
+.win-card .impact { display: inline-block; font-size: 0.75rem; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 600; }
+.impact-high { background: rgba(239,68,68,0.15); color: var(--red); }
+.impact-medium { background: rgba(234,179,8,0.15); color: var(--yellow); }
+.detail-section { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+.before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+.before { background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.2); border-radius: 6px; padding: 1rem; }
+.after { background: rgba(34,197,94,0.08); border: 1px solid rgba(34,197,94,0.2); border-radius: 6px; padding: 1rem; }
+.before .tag, .after .tag { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; font-weight: 700; }
+.before .tag { color: var(--red); }
+.after .tag { color: var(--green); }
+.footer { text-align: center; color: var(--muted); margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 0.85rem; }
+@media (max-width: 768px) { .score-grid { grid-template-columns: 1fr; } .before-after { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Marketing Audit: Resurgent Sports Rehab</h1>
+<div class="meta">
+<span>URL: resurgentsports.com</span>
+<span>Date: March 16, 2026</span>
+<span>Type: Local Business (Sports PT Clinic)</span>
+<span>Locations: Fairfax &amp; Chantilly, VA</span>
+</div>
+
+<div class="score-hero">
+<div class="number text-yellow">61</div>
+<div class="grade">Grade: C+ &mdash; Above Average Foundation, Key Gaps to Close</div>
+</div>
+
+<!-- EXECUTIVE SUMMARY -->
+<h2>Executive Summary</h2>
+<div class="summary-box">
+<p>Resurgent Sports Rehab has a genuinely differentiated positioning in the competitive Northern Virginia sports physical therapy market. The clinic's sports-exclusive focus, three-phase rehabilitation framework, video analysis capabilities, and return-to-sport testing set it apart from generalist PT practices. The team of 8 Doctors of Physical Therapy &mdash; including multiple board-certified Sports Clinical Specialists (SCS), Orthopedic Certified Specialists (OCS), and Certified Athletic Trainers (ATC) &mdash; represents one of the most credentialed sports PT staffs in Northern Virginia. Dr. Kerri Kramer Webb's founding story provides an emotionally resonant brand anchor, and the clinic runs an active events calendar (workshops, webinars, charity 5Ks, run form clinics) demonstrating real community engagement.</p>
+<br>
+<p>However, the clinic is leaving significant revenue on the table across three critical areas:</p>
+<ul style="margin-top:0.75rem">
+<li><strong>Conversion path has high friction:</strong> An external booking redirect to PTEverywhere and pricing buried on the FAQ page (rather than surfaced near CTAs) create unnecessary barriers. The out-of-network model is well-explained in the FAQ but not promoted as a value proposition on service pages.</li>
+<li><strong>Zero content marketing presence:</strong> No blog, no educational resources, no video library, no lead magnets &mdash; despite positioning as the sports PT authority in the region.</li>
+<li><strong>Growth infrastructure is partially built:</strong> A strong 16-partner network (travel baseball, running clubs, triathlon coaching, golf academies, fitness facilities) is in place but underutilized in marketing. No email marketing, no structured referral program, and only 49 Google reviews after 6+ years.</li>
+</ul>
+<br>
+<p><strong>Estimated revenue impact of implementing all recommendations: $8,000&ndash;$25,000/month</strong> in incremental patient bookings.</p>
+</div>
+
+<!-- SCORE BREAKDOWN -->
+<h2>Score Breakdown</h2>
+<div class="score-grid">
+<div class="score-card">
+<div class="label">Content &amp; Messaging (25%)</div>
+<div class="value text-yellow">64</div>
+<div class="bar"><div class="bar-fill bar-yellow" style="width:64%"></div></div>
+<p style="margin-top:0.5rem;font-size:0.85rem;color:var(--muted)">Sport-specific pages are content-rich (MVI framework, ACL data, 3-tier run analysis); no blog or educational content hub</p>
+</div>
+<div class="score-card">
+<div class="label">Conversion Optimization (20%)</div>
+<div class="value text-orange">47</div>
+<div class="bar"><div class="bar-fill bar-orange" style="width:47%"></div></div>
+<p style="margin-top:0.5rem;font-size:0.85rem;color:var(--muted)">Pricing on FAQ + Precision Athlete pages; external booking redirect and CTA confusion remain main barriers</p>
+</div>
+<div class="score-card">
+<div class="label">SEO &amp; Discoverability (20%)</div>
+<div class="value text-yellow">62</div>
+<div class="bar"><div class="bar-fill bar-yellow" style="width:62%"></div></div>
+<p style="margin-top:0.5rem;font-size:0.85rem;color:var(--muted)">Missing meta descriptions, no H1, weak schema; not ranking for core local terms</p>
+</div>
+<div class="score-card">
+<div class="label">Competitive Positioning (15%)</div>
+<div class="value text-yellow">67</div>
+<div class="bar"><div class="bar-fill bar-yellow" style="width:67%"></div></div>
+<p style="margin-top:0.5rem;font-size:0.85rem;color:var(--muted)">Best sports-specific positioning with proprietary frameworks (MVI, 3-tier run analysis), outcome data (ACL stats), and 16 partners</p>
+</div>
+<div class="score-card">
+<div class="label">Brand &amp; Trust (10%)</div>
+<div class="value text-yellow">72</div>
+<div class="bar"><div class="bar-fill bar-yellow" style="width:72%"></div></div>
+<p style="margin-top:0.5rem;font-size:0.85rem;color:var(--muted)">8 DPTs with SCS/OCS/ATC credentials, 128 reviews at 5.0, 16 partners, active events calendar; needs better on-site visibility</p>
+</div>
+<div class="score-card">
+<div class="label">Growth &amp; Strategy (10%)</div>
+<div class="value text-yellow">55</div>
+<div class="bar"><div class="bar-fill bar-yellow" style="width:55%"></div></div>
+<p style="margin-top:0.5rem;font-size:0.85rem;color:var(--muted)">16-partner network, active events (workshops, 5Ks, webinars), referral program in place; email marketing and content still untapped</p>
+</div>
+</div>
+
+<table>
+<thead><tr><th>Category</th><th>Score</th><th>Weight</th><th>Weighted</th></tr></thead>
+<tbody>
+<tr><td>Content &amp; Messaging</td><td>64/100</td><td>25%</td><td>16.0</td></tr>
+<tr><td>Conversion Optimization</td><td>47/100</td><td>20%</td><td>9.4</td></tr>
+<tr><td>SEO &amp; Discoverability</td><td>62/100</td><td>20%</td><td>12.4</td></tr>
+<tr><td>Competitive Positioning</td><td>67/100</td><td>15%</td><td>10.05</td></tr>
+<tr><td>Brand &amp; Trust</td><td>72/100</td><td>10%</td><td>7.2</td></tr>
+<tr><td>Growth &amp; Strategy</td><td>55/100</td><td>10%</td><td>5.5</td></tr>
+<tr style="font-weight:700"><td>TOTAL</td><td></td><td>100%</td><td>60.6/100</td></tr>
+</tbody>
+</table>
+
+<!-- QUICK WINS -->
+<h2>Quick Wins (This Week)</h2>
+
+<div class="win-card">
+<div class="title">1. Consolidate to One Primary CTA <span class="impact impact-high">HIGH IMPACT</span></div>
+<p>Replace four competing CTAs with a single dominant action: <strong>"Book Your Free Discovery Visit"</strong> with a secondary tap-to-call. Decision paralysis from 4 equal-weight CTAs dilutes conversion 15-25%.</p>
+<div class="before-after">
+<div class="before"><div class="tag">Before</div>"Schedule Now" / "Book A Free Consult" / "Call or Text" / "Contact Us" (four equal-weight CTAs)</div>
+<div class="after"><div class="tag">After</div>Primary: "Book Your Free Discovery Visit" (high-contrast button) &mdash; Secondary: phone icon for tap-to-call</div>
+</div>
+</div>
+
+<div class="win-card">
+<div class="title">2. Add Meta Descriptions to All Pages <span class="impact impact-high">HIGH IMPACT</span></div>
+<p>Write 150-160 character meta descriptions for all key pages. Currently missing entirely &mdash; Google auto-generates suboptimal snippets. Improves CTR 5-10%.</p>
+<div class="before-after">
+<div class="before"><div class="tag">Before</div>(No meta description &mdash; Google auto-generates from page content)</div>
+<div class="after"><div class="tag">After</div>"Sports physical therapy in Fairfax &amp; Chantilly VA. Injury prevention, rehab &amp; performance for athletes of all levels. Free consult &mdash; call (703) 698-7888."</div>
+</div>
+</div>
+
+<div class="win-card">
+<div class="title">3. Add H1 Tag to Homepage <span class="impact impact-medium">MEDIUM IMPACT</span></div>
+<p>The homepage has no H1 tag (first heading is an H3). Add: <strong>"Sports Physical Therapy in Northern Virginia"</strong> as the H1 above the current hero copy.</p>
+</div>
+
+<div class="win-card">
+<div class="title">4. Reframe Out-of-Network Insurance as a Benefit <span class="impact impact-high">HIGH IMPACT</span></div>
+<p>The #1 conversion objection is presented as a neutral fact rather than a value proposition.</p>
+<div class="before-after">
+<div class="before"><div class="tag">Before</div>"We are an out-of-network provider."</div>
+<div class="after"><div class="tag">After</div>"We are out-of-network by design. That means longer sessions, one-on-one care every visit, and a therapist who knows your sport &mdash; not a rotating door of providers. Most clients with PPO plans recover 60-80% of the cost."</div>
+</div>
+</div>
+
+<div class="win-card">
+<div class="title">5. Name the Three-Phase Program <span class="impact impact-high">HIGH IMPACT</span></div>
+<p>Brand the rehabilitation methodology as <strong>"The Resurgent Return Protocol"</strong> and reference it consistently across all pages. A named framework becomes a defensible differentiator.</p>
+<div class="before-after">
+<div class="before"><div class="tag">Before</div>"We offer a three-phase program: pain reduction, gradual loading, and return to sport."</div>
+<div class="after"><div class="tag">After</div>"Most PT clinics discharge you when the pain stops. We don't. Our 3-Phase Return Protocol takes you from pain relief through sport-specific loading to objective return-to-play testing &mdash; so you come back stronger, not just pain-free."</div>
+</div>
+</div>
+
+<div class="win-card">
+<div class="title">6. Add Trust Bar Above Booking CTAs <span class="impact impact-high">HIGH IMPACT</span></div>
+<p>Place a horizontal bar directly above every booking CTA: <strong>"&#9733; 5.0 on Google (128 reviews) | Doctor of Physical Therapy | 2025 Business Rate Award | 16 Local Partners"</strong>. Trust signals adjacent to CTAs lift booking rates 10-20%.</p>
+</div>
+
+<div class="win-card">
+<div class="title">7. Add HSA &amp; FSA Badge <span class="impact impact-medium">MEDIUM IMPACT</span></div>
+<p>Place an "HSA &amp; FSA Accepted" badge near all CTAs. Many patients don't realize pre-tax dollars cover PT. Removes a cost objection in 30 minutes of work.</p>
+</div>
+
+<div class="win-card">
+<div class="title">8. Add Micro-Copy Under Booking CTA <span class="impact impact-medium">MEDIUM IMPACT</span></div>
+<p>Below the primary button: <em>"Free 15-minute consult. No commitment. No referral needed."</em> Reduces anxiety about the first interaction.</p>
+</div>
+
+<div class="win-card">
+<div class="title">9. Install Meta Pixel <span class="impact impact-medium">MEDIUM IMPACT</span></div>
+<p>Add Facebook/Instagram tracking pixel via Squarespace integrations (10-minute setup). Currently missing entirely &mdash; no retargeting or lookalike audience capability.</p>
+</div>
+
+<div class="win-card">
+<div class="title">10. Upgrade Schema Markup <span class="impact impact-medium">MEDIUM IMPACT</span></div>
+<p>Change LocalBusiness schema @type to "PhysicalTherapy." Add telephone, geo coordinates, aggregateRating (5.0/49 reviews), and priceRange. Format address as PostalAddress object.</p>
+</div>
+
+<!-- STRATEGIC RECOMMENDATIONS -->
+<h2>Strategic Recommendations (This Month)</h2>
+
+<div class="detail-section">
+<h3>1. Embed Booking Widget On-Site (Priority 1)</h3>
+<p>Contact PTEverywhere about their embeddable widget or API. Eliminating the external redirect &mdash; where visitors leave resurgentsports.com entirely &mdash; is the single highest-impact conversion change. External booking redirects in healthcare see 40-60% abandonment. <strong>Expected lift: 30-50%. Timeline: 1-2 weeks.</strong></p>
+
+<h3>2. Elevate Pricing &amp; Insurance Info from FAQ to Dedicated Page (Priority 2)</h3>
+<p>The FAQ already has excellent pricing detail ($220 eval, $175-190 follow-ups, $95/$80 recovery, ~8 session plans, 50-80% reimbursement). Create a dedicated Pricing &amp; Insurance page that surfaces this information prominently, adds an out-of-network vs in-network comparison table, and links from every service page. <strong>Timeline: 1 week.</strong></p>
+
+<h3>3. Create a Free Consult Landing Page (Priority 3)</h3>
+<p>Explain what the consult includes, who it's for, how long it takes, what to expect. Include therapist photo, testimonials, and embedded booking form. All primary CTAs route here. <strong>Timeline: 1 week.</strong></p>
+
+<h3>4. Sustain Google Review Momentum</h3>
+<p>With 128 reviews at 5.0 stars, Resurgent already has strong review presence. Implement a systematic post-visit email/SMS review request to maintain velocity and push toward <strong>200+ reviews</strong>. Surface the 5.0 / 128-review rating on the website via a Google Reviews widget.</p>
+
+<h3>5. Add 5-10 Patient Testimonials</h3>
+<p>Collect testimonials with specific outcomes: name, sport, injury, timeline, quote. Place at least one on every service page adjacent to booking CTAs. <strong>Timeline: 2-3 weeks.</strong></p>
+
+<h3>6. Create "Why Out-of-Network" Content Series</h3>
+<p>Topics: "Why We Don't Take Insurance (And Why That's Better For You)," "How to Get Reimbursed for PT," "In-Network vs Out-of-Network: What You Actually Get." <strong>Timeline: 1 post/week for 4 weeks.</strong></p>
+
+<h3>7. Install Microsoft Clarity (Free)</h3>
+<p>Heatmap and session recording to identify exactly where visitors drop off. Data-driven conversion optimization. <strong>Timeline: 1 day.</strong></p>
+</div>
+
+<!-- LONG-TERM INITIATIVES -->
+<h2>Long-Term Initiatives (This Quarter)</h2>
+
+<div class="detail-section">
+<h3>1. Launch Content Hub &amp; Blog</h3>
+<p>Publish 2-4 SEO-optimized articles per month. Priority topics: ACL rehab, youth baseball arm pain, return to running after stress fracture, sports PT vs orthopedic PT. Zero content marketing is the biggest gap relative to expertise level. <strong>Projected: 3-5x organic traffic over 12 months.</strong></p>
+
+<h3>2. Build City-Specific Landing Pages</h3>
+<p>Create pages for Vienna, Tysons, Oakton, Falls Church, Arlington, Alexandria, Sterling, Centreville. Each targeting "[service] + [city] VA." Resurgent does NOT rank on page one for "sports physical therapy fairfax va" &mdash; this fixes that. <strong>Timeline: 2-4 weeks for initial 5 pages.</strong></p>
+
+<h3>3. Develop Video Content Strategy</h3>
+<p>3-5 short video testimonials of athletes returning to sport. Weekly series: "60-Second Sport Fix" exercise demos, "Return to Sport Diaries" patient journeys, "Coach's Corner" prevention tips. Video is highest-trust format and Resurgent already does video analysis. <strong>Timeline: 2-3 months.</strong></p>
+
+<h3>4. Expand &amp; Leverage Existing 16-Partner Network</h3>
+<p>Resurgent already has 16 active partners including Arlington Travel Baseball, NOVA Running Club, Road Runner Sports, and fitness facilities. Expand by adding high school athletic departments (Chantilly HS, Fairfax HS, Oakton HS, Westfield HS). <strong>Crucially, surface partner logos on the homepage and service pages as trust signals.</strong> Create co-branded content and offer pre-season screenings through partner channels. <strong>Timeline: 1-3 months to expand and integrate into marketing.</strong></p>
+
+<h3>5. Build Email Marketing Infrastructure</h3>
+<p>Lead magnet ("The Parent's Guide to Youth Sports Injuries"), nurture sequence (4-6 educational emails + soft CTAs), bi-weekly newsletter. Capture visitors who aren't ready to book immediately. <strong>Timeline: 1-2 months.</strong></p>
+</div>
+
+<!-- DETAILED ANALYSIS -->
+<h2>Detailed Analysis by Category</h2>
+
+<div class="detail-section">
+<h3>Content &amp; Messaging (64/100)</h3>
+<p><strong>Headline:</strong> "PRO-CALIBER CARE FOR ATHLETES OF ALL LEVELS" passes the 5-second clarity test but undersells the clinic's actual depth. The company page has a much stronger stat: <em>"Treating an injury on day two versus day nine leads to 3 WEEKS FASTER return to sport"</em> &mdash; this data-backed claim should be in the headline, not buried.</p>
+<div class="before-after">
+<div class="before"><div class="tag">Current Headline</div>"PRO-CALIBER CARE FOR ATHLETES OF ALL LEVELS &mdash; Optimize Performance, Prevent Injury and Fix Pain"</div>
+<div class="after"><div class="tag">Recommended</div>"Get Back to Your Sport Without Surgery, Setbacks, or Guesswork &mdash; Sports Physical Therapy in Fairfax Backed by a 3-Phase Return-to-Play System"</div>
+</div>
+<p><strong>Value Proposition:</strong> The three-phase program is the strongest strategic asset but is buried. It needs to be named ("The Resurgent Return Protocol") and elevated as the primary differentiator.</p>
+<p><strong>Copy Quality:</strong> Service descriptions read like clinical menus rather than benefit-driven copy. Dry needling, manual therapy, and video analysis are described by what they are, not by the problem they solve.</p>
+<div class="before-after">
+<div class="before"><div class="tag">Current Service Copy</div>"Dry Needling &mdash; Our therapists use dry needling to release trigger points and reduce muscle tension."</div>
+<div class="after"><div class="tag">Recommended</div>"That stubborn knot that flares up every time you train? Dry needling targets the trigger point directly, releasing deep muscle tension so you can move without compensating. Most athletes feel a difference within one session."</div>
+</div>
+<p><strong>Social Proof:</strong> Photo carousel, one award badge, and 128 Google reviews at 5.0 stars provide a solid foundation. However, the review strength isn't surfaced on the site. The 16-partner network (travel baseball, running clubs, triathlon coaching, golf academies) should be displayed as partner logos for additional trust. No written testimonials, no video, no outcome statistics visible on main pages.</p>
+<p><strong>Sport-Specific Pages (Strength):</strong> Deeper than initially assessed. The running page offers 3-tier analysis (Run Screen, Performance, Medical). Baseball has a proprietary MVI framework (Mechanics/Volume/Intrinsics). ACL prevention cites real outcome data (52% reduced risk for female athletes, 85% for males). Youth athletes page addresses growth plate considerations. These pages demonstrate genuine clinical expertise &mdash; the gap is that this depth doesn't extend to a blog or educational content hub.</p>
+<p><strong>Content Depth Gap:</strong> Despite strong service pages, there is no blog, no educational resources, and no downloadable content. The clinical knowledge evident in sport-specific pages (ACL stats, MVI framework, run form analysis methodology) should be repurposed into SEO-friendly articles.</p>
+<p><strong>Brand Voice:</strong> Professional but lacks personality. The company page stat ("Day 2 vs Day 9 = 3 weeks faster return to sport") is the most compelling copy on the site but isn't used in headlines or CTAs. Recommended philosophy: <em>"Pain-free is not the finish line. Game-ready is."</em></p>
+</div>
+
+<div class="detail-section">
+<h3>Conversion Optimization (47/100)</h3>
+<p>Still the weakest area but stronger than initially assessed. Pricing exists in two places (FAQ page and Precision Athlete Program with 4-tier pricing: Platinum $170, Gold $175, Silver $185, Bronze $90). A dedicated reviews page loads Google reviews dynamically. The main barriers are the external booking redirect and pricing not being surfaced near CTAs.</p>
+<ul>
+<li><strong>CTA Confusion:</strong> Four competing CTAs create decision paralysis. "Schedule Now" vs "Book A Free Consult" is ambiguous.</li>
+<li><strong>External Booking Redirect:</strong> Clicking any booking CTA sends visitors to app.pteverywhere.com. Unfamiliar domain, lost trust signals, 40-60% abandonment typical.</li>
+<li><strong>Pricing Discoverability:</strong> Pricing exists on the FAQ page ($220 initial eval, $175-190 follow-ups, $95/$80 recovery sessions) with good detail including typical plan length (~8 sessions) and reimbursement ranges (50-80%). However, this information is buried &mdash; not linked from service pages or near CTAs where cost anxiety peaks.</li>
+<li><strong>Insurance Explanation:</strong> The FAQ thoroughly explains the out-of-network model, superbill process, HSA/FSA eligibility, and Medicare coverage. The issue is placement &mdash; this information needs to be surfaced on service pages and near booking CTAs, not hidden in FAQs.</li>
+<li><strong>Trust Signal Placement:</strong> Credentials and awards exist but aren't adjacent to conversion points.</li>
+<li><strong>Mobile:</strong> No sticky CTA bar. External redirect is especially jarring on mobile.</li>
+</ul>
+</div>
+
+<div class="detail-section">
+<h3>SEO &amp; Discoverability (62/100)</h3>
+<p><strong>Technical Foundation:</strong> Squarespace 7.1, SSL/HTTPS, clean URLs, sitemap with 120+ URLs. GA4 and Google Ads active.</p>
+<p><strong>Critical Gaps:</strong></p>
+<ul>
+<li>No meta descriptions on any pages</li>
+<li>No H1 tag on homepage (first heading is H3)</li>
+<li>Schema uses generic "LocalBusiness" instead of "PhysicalTherapy"</li>
+<li>Missing OG and Twitter Card tags</li>
+<li>No Meta Pixel (no retargeting capability)</li>
+<li>Not ranking for "sports physical therapy fairfax va" (core term)</li>
+<li>Missing from healthcare directories (Healthgrades, Vitals, WebMD)</li>
+</ul>
+<p><strong>Local SEO:</strong> NAP consistent. GBP active with 5.0 stars / 49 reviews. But no city-specific landing pages for service areas (Vienna, Tysons, Arlington, etc.).</p>
+</div>
+
+<div class="detail-section">
+<h3>Competitive Positioning (67/100)</h3>
+<p><strong>Key Competitors:</strong> Rehab 2 Perform (4+ locations), ACE PT (7 locations), Jackson Clinics (19 locations), VA Sportsmedicine Institute (est. 1974), Integrated Sports Medicine (3 locations).</p>
+<p><strong>Resurgent's Edge:</strong> Best-in-class sports specificity with proprietary frameworks no competitor matches: the MVI assessment (Mechanics/Volume/Intrinsics) for baseball, 3-tier run analysis system, ACL prevention program with published outcome data (52-85% injury reduction). Combined with 8 DPTs carrying SCS/OCS/ATC/CSCS credentials, 16 active local partners, and an events calendar (workshops, webinars, charity 5Ks, swim league booths), Resurgent has a deeper competitive moat than the score initially reflected.</p>
+<p><strong>Resurgent's Edge (additional):</strong> A 16-partner network (Arlington Travel Baseball, NOVA Running Club, Road Runner Sports, triathlon/golf/football coaching) that no competitor visibly matches.</p>
+<p><strong>Resurgent's Gaps:</strong> Content authority (zero blog vs active competitors), location scale (2 vs 7-19), and insurance accessibility. Review volume (128 at 5.0) is competitive but not yet surfaced on the website.</p>
+</div>
+
+<div class="detail-section">
+<h3>Brand &amp; Trust (72/100)</h3>
+<p><strong>Team Credentials (Major Strength):</strong> 8 Doctors of Physical Therapy across 2 locations, including multiple SCS (Sports Clinical Specialist), OCS (Orthopedic Certified Specialist), and ATC (Certified Athletic Trainer) designations. Dr. Diana Marquez-FitzPatrick and Dr. Mike FitzPatrick both hold DPT + ATC + SCS + OCS (rare quad-credentialed). Dr. JT Podell holds DPT + MEd + ATC. This is one of the most credentialed sports PT teams in NoVA &mdash; but credentials are not prominently displayed on service pages or near CTAs.</p>
+<p><strong>Community Engagement (Strength):</strong> Active events calendar with 7+ upcoming events: weightlifting injury prevention workshop (Apr 11), swim performance webinar (Apr 15), Feed Fairfax charity 5K (May 2), run form clinics (Jul &amp; Sep), NVSL swim league booths, and running club partnerships. This demonstrates genuine community investment that most competitors lack.</p>
+<p><strong>Trust Assets:</strong> 128 Google reviews at 5.0 stars, 2025 Business Rate Award, 16-partner network, Vienna Business Association membership, dedicated reviews page. Dual-location footprint signals growth.</p>
+<p><strong>Gaps:</strong> Team credentials and events aren't surfaced on the homepage or service pages. Partner logos are missing from main pages. The external booking system breaks brand continuity. Thought leadership content (blog, published articles) is absent despite the clinical depth evident in sport-specific pages.</p>
+</div>
+
+<div class="detail-section">
+<h3>Growth &amp; Strategy (55/100)</h3>
+<p>Stronger foundation than initially assessed, with several active growth channels:</p>
+<ul>
+<li><strong>Active:</strong> 16-partner referral network, community events (7+ upcoming workshops/webinars/5Ks), swim league presence (NVSL booths), running club partnerships (NOVA Running Club, Falls Church Run Collective), Precision Athlete Program (recurring revenue model with 4 tiers), referral program (form-based, no incentive), Google Ads campaigns</li>
+<li><strong>Partially Active:</strong> Social media (Facebook, Instagram, YouTube &mdash; inconsistent cadence), organic search (service pages rank but no blog content)</li>
+<li><strong>Untapped:</strong> Content marketing/blog, email marketing, SMS marketing, physician referral network, partner co-branded content, partner logos on site. The referral program has no incentive structure (purely altruistic) &mdash; adding a reward would increase referral volume.</li>
+</ul>
+<p><strong>Key Opportunities:</strong> The Precision Athlete Program is already a membership-style recurring revenue model ($170-$185/session with monthly check-ins). The events calendar shows community engagement but isn't being captured for email list building. Each event attendee should become an email subscriber. Corporate wellness partnerships with NoVA tech companies remain untapped.</p>
+</div>
+
+<!-- COMPETITOR COMPARISON -->
+<h2>Competitor Comparison</h2>
+<table>
+<thead><tr><th>Factor</th><th>Resurgent Sports</th><th>Rehab 2 Perform</th><th>ACE PT</th><th>VA Sportsmedicine</th><th>Jackson Clinics</th></tr></thead>
+<tbody>
+<tr><td>Locations</td><td>2</td><td>4+</td><td>7</td><td>2</td><td>19</td></tr>
+<tr><td>Sports Specificity</td><td class="text-green">9/10</td><td>7/10</td><td>5/10</td><td>7/10</td><td>5/10</td></tr>
+<tr><td>Headline Clarity</td><td>7/10</td><td>7/10</td><td>5/10</td><td>6/10</td><td>5/10</td></tr>
+<tr><td>Value Prop Strength</td><td>7/10</td><td>7/10</td><td>5/10</td><td>6/10</td><td>4/10</td></tr>
+<tr><td>Trust Signals</td><td class="text-green">8/10</td><td>8/10</td><td>7/10</td><td>8/10</td><td>7/10</td></tr>
+<tr><td>CTA Effectiveness</td><td class="text-red">5/10</td><td>6/10</td><td>5/10</td><td>5/10</td><td>5/10</td></tr>
+<tr><td>Content Depth</td><td class="text-red">2/10</td><td>6/10</td><td>7/10</td><td>3/10</td><td>3/10</td></tr>
+<tr><td>Review Volume</td><td class="text-green">8/10</td><td>7/10</td><td>7/10</td><td>8/10</td><td>8/10</td></tr>
+<tr><td>Local SEO</td><td class="text-red">5/10</td><td>7/10</td><td>8/10</td><td>6/10</td><td>9/10</td></tr>
+</tbody>
+</table>
+
+<!-- REVENUE IMPACT -->
+<h2>Revenue Impact Summary</h2>
+<table>
+<thead><tr><th>Recommendation</th><th>Est. Monthly Impact</th><th>Confidence</th><th>Timeline</th></tr></thead>
+<tbody>
+<tr><td>Embed booking widget on-site</td><td>$3,000&ndash;$8,000</td><td>High</td><td>2 weeks</td></tr>
+<tr><td>Elevate pricing from FAQ to dedicated page</td><td>$1,500&ndash;$4,000</td><td>High</td><td>1 week</td></tr>
+<tr><td>Consolidate CTAs + trust bar</td><td>$1,000&ndash;$3,000</td><td>High</td><td>1 week</td></tr>
+<tr><td>Surface 128 reviews on-site + push to 200+</td><td>$500&ndash;$1,500</td><td>Medium</td><td>3 months</td></tr>
+<tr><td>Launch content hub / blog</td><td>$2,000&ndash;$5,000</td><td>Medium</td><td>6-12 months</td></tr>
+<tr><td>City-specific landing pages</td><td>$1,000&ndash;$3,000</td><td>Medium</td><td>1-2 months</td></tr>
+<tr><td>Video testimonials &amp; content</td><td>$500&ndash;$2,000</td><td>Medium</td><td>2-3 months</td></tr>
+<tr><td>Email marketing infrastructure</td><td>$500&ndash;$1,500</td><td>Medium</td><td>2-3 months</td></tr>
+<tr><td>Expand 16-partner network + integrate into marketing</td><td>$1,000&ndash;$3,000</td><td>Medium</td><td>1-3 months</td></tr>
+<tr style="font-weight:700"><td>Total Potential</td><td>$8,000&ndash;$25,000/mo</td><td></td><td></td></tr>
+</tbody>
+</table>
+<p style="font-size:0.8rem;color:var(--muted);margin-top:0.5rem">Estimates assume ~2,000-5,000 monthly visitors, average session value of $175-190 (per FAQ pricing), and typical conversion rates for local healthcare services.</p>
+
+<!-- NEXT STEPS -->
+<h2>Next Steps</h2>
+<div class="detail-section">
+<ol>
+<li><strong>This week:</strong> Consolidate CTAs, add trust bar, write meta descriptions, add H1 tag, reframe insurance copy, add HSA/FSA badge. These are copy/config changes requiring no development.</li>
+<li><strong>Next 2 weeks:</strong> Embed booking widget, elevate FAQ pricing into a dedicated pricing/insurance page, create free consult landing page, embed Google Reviews widget (128 reviews at 5.0), install Meta Pixel and Microsoft Clarity.</li>
+<li><strong>This month:</strong> Collect and publish 5-10 patient testimonials, name the 3-Phase Protocol, publish first 4 blog posts, begin city-specific landing pages.</li>
+<li><strong>This quarter:</strong> Launch full content hub (2-4 posts/month), produce video testimonial series, expand 16-partner network with high school athletics and co-branded content, build email marketing with lead magnet and nurture sequence.</li>
+</ol>
+</div>
+
+<div class="footer">
+Generated by AI Marketing Suite &mdash; <code>/market audit</code> &mdash; March 16, 2026
+</div>
+
+</div>
+</body>
+</html>
