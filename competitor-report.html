@@ -5,44 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Resurgent Sports Rehab: Competitive Intelligence Report</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;500;600;700&display=swap');
-  body { font-family: 'Montserrat', sans-serif; max-width: 1100px; margin: 0 auto; padding: 20px; color: #595959; background: white; line-height: 1.6; }
-  h1 { font-family: 'Anton', sans-serif; color: #272C48; text-transform: uppercase; border-bottom: 3px solid #F15F26; padding-bottom: 10px; font-size: 2em; }
-  h2 { font-family: 'Anton', sans-serif; color: #272C48; text-transform: uppercase; border-bottom: 2px solid #F15F26; padding-bottom: 8px; margin-top: 50px; font-size: 1.5em; }
-  h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; color: #F15F26; margin-top: 30px; font-size: 1.25em; }
-  h4 { font-family: 'Montserrat', sans-serif; color: #272C48; margin-top: 20px; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 1100px; margin: 0 auto; padding: 20px; color: #1a1a2e; background: #f8f9fa; line-height: 1.6; }
+  h1 { color: #0d1b2a; border-bottom: 3px solid #e63946; padding-bottom: 10px; font-size: 2em; }
+  h2 { color: #1d3557; border-bottom: 2px solid #457b9d; padding-bottom: 8px; margin-top: 50px; font-size: 1.5em; }
+  h3 { color: #2a6f97; margin-top: 30px; font-size: 1.25em; }
+  h4 { color: #468faf; margin-top: 20px; }
   table { border-collapse: collapse; width: 100%; margin: 15px 0; font-size: 0.9em; }
-  th { background: #272C48; color: white; padding: 10px 8px; text-align: left; font-weight: 600; }
-  td { padding: 8px; border: 1px solid #E8E0DC; vertical-align: top; }
-  tr:nth-child(even) { background: #FCF2EF; }
-  tr:hover { background: rgba(241, 95, 38, 0.05); }
-  .critical { color: #C0392B; font-weight: bold; }
-  .high { color: #F15F26; font-weight: bold; }
-  .moderate { color: #2E8B57; font-weight: bold; }
-  .executive-box { background: #272C48; color: white; padding: 25px; border-radius: 8px; margin: 20px 0; }
-  .executive-box h2 { color: white; border-bottom-color: #F15F26; }
-  .insight-box { background: #FCF2EF; border-left: 4px solid #F15F26; padding: 15px; margin: 15px 0; }
-  .action-box { background: rgba(46, 139, 87, 0.08); border-left: 4px solid #2E8B57; padding: 15px; margin: 15px 0; }
-  .warning-box { background: rgba(192, 57, 43, 0.08); border-left: 4px solid #C0392B; padding: 15px; margin: 15px 0; }
+  th { background: #1d3557; color: white; padding: 10px 8px; text-align: left; font-weight: 600; }
+  td { padding: 8px; border: 1px solid #dee2e6; vertical-align: top; }
+  tr:nth-child(even) { background: #e9ecef; }
+  tr:hover { background: #d4e4f7; }
+  .critical { color: #e63946; font-weight: bold; }
+  .high { color: #f4a261; font-weight: bold; }
+  .moderate { color: #2a9d8f; font-weight: bold; }
+  .executive-box { background: #1d3557; color: white; padding: 25px; border-radius: 8px; margin: 20px 0; }
+  .executive-box h2 { color: white; border-bottom-color: #e63946; }
+  .insight-box { background: #fff3cd; border-left: 4px solid #f4a261; padding: 15px; margin: 15px 0; }
+  .action-box { background: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+  .warning-box { background: #f8d7da; border-left: 4px solid #e63946; padding: 15px; margin: 15px 0; }
   .swot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 15px 0; }
   .swot-box { padding: 15px; border-radius: 6px; }
-  .strengths { background: rgba(46, 139, 87, 0.1); border: 1px solid #2E8B57; }
-  .weaknesses { background: rgba(192, 57, 43, 0.1); border: 1px solid #C0392B; }
-  .opportunities { background: rgba(0, 69, 165, 0.1); border: 1px solid #0045A5; }
-  .threats { background: rgba(212, 160, 23, 0.1); border: 1px solid #D4A017; }
-  .positioning-map { background: #F4F0EE; padding: 20px; border-radius: 8px; font-family: monospace; white-space: pre; text-align: center; margin: 20px 0; font-size: 0.85em; }
+  .strengths { background: #d4edda; border: 1px solid #28a745; }
+  .weaknesses { background: #f8d7da; border: 1px solid #e63946; }
+  .opportunities { background: #cce5ff; border: 1px solid #007bff; }
+  .threats { background: #fff3cd; border: 1px solid #ffc107; }
+  .positioning-map { background: #f0f0f0; padding: 20px; border-radius: 8px; font-family: monospace; white-space: pre; text-align: center; margin: 20px 0; font-size: 0.85em; }
   ul { margin: 5px 0; padding-left: 20px; }
   li { margin: 4px 0; }
-  .toc { background: white; padding: 20px; border: 1px solid #E8E0DC; border-radius: 8px; margin: 20px 0; }
-  .toc a { color: #272C48; text-decoration: none; }
+  .toc { background: white; padding: 20px; border: 1px solid #dee2e6; border-radius: 8px; margin: 20px 0; }
+  .toc a { color: #1d3557; text-decoration: none; }
   .toc a:hover { text-decoration: underline; }
   .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; font-weight: bold; }
-  .badge-critical { background: #C0392B; color: white; }
-  .badge-high { background: #F15F26; color: white; }
-  .badge-moderate { background: #2E8B57; color: white; }
-  .competitor-header { background: linear-gradient(135deg, #272C48, #3A4066); color: white; padding: 15px 20px; border-radius: 8px 8px 0 0; margin-top: 30px; }
-  .competitor-body { background: white; padding: 20px; border: 1px solid #E8E0DC; border-top: none; border-radius: 0 0 8px 8px; }
-  @media print { body { background: white; } .executive-box { background: #272C48; } }
+  .badge-critical { background: #e63946; color: white; }
+  .badge-high { background: #f4a261; color: white; }
+  .badge-moderate { background: #2a9d8f; color: white; }
+  .competitor-header { background: linear-gradient(135deg, #1d3557, #457b9d); color: white; padding: 15px 20px; border-radius: 8px 8px 0 0; margin-top: 30px; }
+  .competitor-body { background: white; padding: 20px; border: 1px solid #dee2e6; border-top: none; border-radius: 0 0 8px 8px; }
+  @media print { body { background: white; } .executive-box { background: #333; } }
 </style>
 </head>
 <body>
